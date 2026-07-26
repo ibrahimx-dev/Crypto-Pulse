@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="55%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#e0f2fe" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background with gradient -->
+  <rect width="32" height="32" rx="9" fill="url(#bg)"/>
+
+  <!-- Subtle inner highlight (glass sheen) -->
+  <rect x="1" y="1" width="30" height="14" rx="8" fill="white" fill-opacity="0.10"/>
+
+  <!-- Lightning bolt — CryptoPulse icon -->
+  <path
+    d="M18.5 5L10 18h7.2l-1.7 9 11.5-13h-7.4L18.5 5z"
+    fill="url(#bolt)"
+    filter="url(#glow)"
+  />
+</svg>
