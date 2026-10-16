@@ -7,14 +7,6 @@
 
 ---
 
-## 📸 Screenshots
-
-| Dashboard (Dark) | Coin Drawer | Watchlist |
-|---|---|---|
-| *(deploy and add screenshot)* | *(deploy and add screenshot)* | *(deploy and add screenshot)* |
-
----
-
 ## 🌟 Features
 
 ### Core
